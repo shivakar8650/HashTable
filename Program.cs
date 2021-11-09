@@ -20,7 +20,16 @@ namespace HashTable
             FrequencyOfWord find = new FrequencyOfWord();
             find.Find_frequency(hash);
 
+            RemoveWord obj = new RemoveWord();
+            obj.Remove(hash,"avoidable");
 
+
+            Console.WriteLine("After remove the elements are :");
+            for (int i = 0; i < para.Length; i++)
+            {
+              Console.WriteLine(  hash.Get(i));
+
+            }
 
         }
     }
