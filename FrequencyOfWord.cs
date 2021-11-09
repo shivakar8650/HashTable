@@ -33,8 +33,6 @@ namespace HashTable
                     else
                         frequency.Add(hash_value, 1);
                 }
-              /*  frequency.TryAdd(hash.Get(key).ToLower(), 0);
-                frequency[hash.Get(key).ToLower()]++;*/
                 key++;
             }
             foreach (var item in frequency)
